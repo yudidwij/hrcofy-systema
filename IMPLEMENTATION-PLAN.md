@@ -182,14 +182,14 @@ JavaScript (belum persisten antar reload).
 
 | Phase | Nama | Status |
 |---|---|---|
-| 0 | Setup & Design Tokens | Belum Mulai |
-| 1 | Landing Page / Company Profile | Belum Mulai |
-| 2 | Dashboard Shell | Belum Mulai |
-| 3 | Builder Scorecard | Belum Mulai |
-| 4 | Scoring Engine | Belum Mulai |
-| 5 | Visualisasi Ringkasan | Belum Mulai |
-| 6 | Responsif & Aksesibilitas | Belum Mulai |
-| 7 | Review & Handoff | Belum Mulai |
+| 0 | Setup & Design Tokens | Disetujui |
+| 1 | Landing Page / Company Profile | Disetujui |
+| 2 | Dashboard Shell | Disetujui |
+| 3 | Builder Scorecard | Disetujui |
+| 4 | Scoring Engine | Disetujui |
+| 5 | Visualisasi Ringkasan | Disetujui |
+| 6 | Responsif & Aksesibilitas | Disetujui |
+| 7 | Review & Handoff | Disetujui |
 
 *(Agent Codex WAJIB memperbarui kolom Status di tabel ini setiap kali sebuah Phase selesai
 dikerjakan dan menunggu approval — ubah jadi "Menunggu Approval", lalu setelah Yudi menyetujui
@@ -199,3 +199,27 @@ di chat, ubah jadi "Disetujui" sebelum memulai Phase berikutnya.)*
 
 *(Kosong — isi di sini jika ada perubahan scope disepakati di tengah proses build, dengan
 tanggal dan alasan singkat.)*
+
+## Handoff Phase 7
+
+### Checklist PRD — In Scope
+
+- [x] Landing page: hero, CTA demo, empat pilar, penjelasan STRATEGOS, serta footer identitas dan kontak.
+- [x] Dashboard: sidebar grouped yang dirender dari `navConfig`, pemilih snapshot, dan navigasi mobile.
+- [x] Builder: empat perspektif, CRUD objective/KPI, validasi input, dan indikator total bobot.
+- [x] Scoring deterministik: skor KPI (clamp 0–120%), skor perspektif, skor total, dan status RAG.
+- [x] Ringkasan: stat callout skor total, badge/label RAG, serta KPI Library read-only dari Knowledge Base.
+- [x] Responsif dan aksesibilitas: layout desktop/tablet/mobile, scroll tabel pada layar sempit, focus state, dan status RAG berteks.
+
+### Known Limitations
+
+- Data hanya berada di memori browser; data hilang saat halaman di-refresh dan belum tersedia untuk multi-user.
+- Belum ada autentikasi, backend/Supabase, ekspor PDF/Excel, perbandingan antar-periode, maupun AI/BYOK.
+- Snapshot demo terbatas pada Q3 2026 dan Q4 2026; penambahan snapshot baru belum tersedia.
+- TAXIS, ERGON, MISTHOS, dan tool STRATEGOS lainnya masih berstatus “Segera”.
+
+### Rekomendasi Langkah Berikutnya
+
+1. Integrasikan Supabase untuk autentikasi, penyimpanan scorecard, dan snapshot yang dikelola pengguna.
+2. Tambahkan ekspor serta perbandingan snapshot setelah model data stabil.
+3. Lanjutkan modul TAXIS dengan pola navigasi config-driven yang sama.

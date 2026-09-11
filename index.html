@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="HRCofy Systema — consulting operating system untuk people, performance, dan protection."
+    />
+    <title>HRCofy Systema</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              navy: '#151B3B',
+              'navy-mid': '#1E2548',
+              gold: '#F5A623',
+              'gold-bright': '#FFC107',
+              blue: '#4DBCE9',
+              'blue-bright': '#29B6F6',
+              light: '#F5F6FA',
+              charcoal: '#2A2E45',
+              muted: '#8B92A8',
+              'rag-red': '#C75B3F',
+              'rag-orange': '#E67E22',
+              'rag-green': '#2E7D6F',
+            },
+            fontFamily: {
+              sans: ['Calibri', 'Segoe UI', 'system-ui', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="flex min-h-screen flex-col bg-light font-sans text-charcoal antialiased">
+    <header class="bg-navy">
+      <nav class="mx-auto flex min-h-20 max-w-screen-xl items-center justify-between gap-6 px-6 py-4" aria-label="Navigasi utama">
+        <a class="text-xl font-bold tracking-tight focus:outline-none focus-visible:ring-2 focus-visible:ring-blue" href="index.html" aria-label="HRCofy Systema, beranda">
+          <span class="text-gold">HR</span><span class="text-blue">Cofy</span><span class="ml-2 font-normal text-white">Systema</span>
+        </a>
+        <div class="flex items-center gap-5">
+          <a class="hidden text-sm text-white transition hover:text-blue focus:outline-none focus-visible:ring-2 focus-visible:ring-blue sm:inline" href="#modul">Modul</a>
+          <a class="rounded-lg bg-gradient-to-r from-gold to-blue px-4 py-2 text-sm font-bold text-navy transition hover:from-gold-bright hover:to-blue-bright focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-navy" href="dashboard.html">Buka Demo</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="flex-1" aria-label="Konten utama">
+      <section class="bg-navy" aria-labelledby="hero-title">
+        <div class="mx-auto grid max-w-screen-xl gap-12 px-6 py-16 sm:py-24 lg:grid-cols-12 lg:items-end lg:py-32">
+          <div class="lg:col-span-9">
+            <p class="mb-6 text-sm font-bold tracking-wide text-blue">STRATEGOS · BALANCED SCORECARD &amp; KPI LIBRARY</p>
+            <h1 id="hero-title" class="max-w-4xl text-4xl font-bold leading-tight text-gold sm:text-5xl lg:text-6xl">Ubah strategi menjadi arah kerja yang terukur.</h1>
+            <p class="mt-6 max-w-2xl text-base leading-7 text-white sm:text-lg">HRCofy Systema membantu praktisi HR dan pemimpin bisnis menerjemahkan prioritas organisasi ke dalam Balanced Scorecard yang jelas, disiplin, dan siap dieksekusi.</p>
+            <div class="mt-10 flex flex-wrap gap-4">
+              <a class="rounded-lg bg-gradient-to-r from-gold to-blue px-6 py-3 text-sm font-bold text-navy transition hover:from-gold-bright hover:to-blue-bright focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-navy" href="dashboard.html">Mulai dengan Scorecard</a>
+              <a class="rounded-lg border border-blue px-6 py-3 text-sm font-bold text-white transition hover:border-gold hover:text-gold focus:outline-none focus-visible:ring-2 focus-visible:ring-blue" href="#modul">Kenali modulnya</a>
+            </div>
+          </div>
+          <p class="border-l-2 border-blue pl-4 text-sm leading-6 text-muted lg:col-span-3">Satu fondasi untuk menyelaraskan People, Performance, dan Protection.</p>
+        </div>
+      </section>
+
+      <section class="bg-light py-16 sm:py-24" aria-labelledby="pillars-title">
+        <div class="mx-auto max-w-screen-xl px-6">
+          <div class="max-w-2xl">
+            <p class="text-sm font-bold tracking-wide text-navy">EMPAT PILAR HRCOfy</p>
+            <h2 id="pillars-title" class="mt-3 text-2xl font-bold text-navy sm:text-3xl">Satu sistem untuk keputusan people yang lebih kuat.</h2>
+            <p class="mt-4 text-base leading-7 text-charcoal">Mulai dari strategi, kemudian perluas praktik HR Anda melalui pilar-pilar yang saling terhubung.</p>
+          </div>
+          <div class="mt-10 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+            <article class="rounded-lg border-t-[3px] border-gold bg-white p-6 shadow-sm">
+              <div class="flex items-start justify-between gap-4"><h3 class="text-xl font-bold text-navy">STRATEGOS</h3><span class="rounded-full bg-navy px-3 py-1 text-xs font-bold text-gold">Tersedia</span></div>
+              <p class="mt-3 text-sm leading-6 text-charcoal">Strategi dan perencanaan yang menghubungkan tujuan bisnis dengan eksekusi.</p>
+              <p class="mt-6 text-sm font-bold text-navy">Balanced Scorecard &amp; KPI Library</p>
+            </article>
+            <article class="rounded-lg border border-muted/30 bg-white/60 p-6 opacity-75">
+              <div class="flex items-start justify-between gap-4"><h3 class="text-xl font-bold text-navy">TAXIS</h3><span class="rounded-full bg-light px-3 py-1 text-xs font-bold text-navy">Segera</span></div>
+              <p class="mt-3 text-sm leading-6 text-charcoal">Arsitektur jabatan untuk peran, kompetensi, dan evaluasi yang konsisten.</p>
+            </article>
+            <article class="rounded-lg border border-muted/30 bg-white/60 p-6 opacity-75">
+              <div class="flex items-start justify-between gap-4"><h3 class="text-xl font-bold text-navy">ERGON</h3><span class="rounded-full bg-light px-3 py-1 text-xs font-bold text-navy">Segera</span></div>
+              <p class="mt-3 text-sm leading-6 text-charcoal">Desain organisasi dan proses yang memberi kapasitas untuk bertumbuh.</p>
+            </article>
+            <article class="rounded-lg border border-muted/30 bg-white/60 p-6 opacity-75">
+              <div class="flex items-start justify-between gap-4"><h3 class="text-xl font-bold text-navy">MISTHOS</h3><span class="rounded-full bg-light px-3 py-1 text-xs font-bold text-navy">Segera</span></div>
+              <p class="mt-3 text-sm leading-6 text-charcoal">Kompensasi dan kepatuhan yang melindungi organisasi serta karyawannya.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="modul" class="bg-white py-16 sm:py-24" aria-labelledby="module-title">
+        <div class="mx-auto grid max-w-screen-xl gap-12 px-6 lg:grid-cols-12 lg:items-center">
+          <div class="lg:col-span-7">
+            <p class="text-sm font-bold tracking-wide text-navy">MODUL PERTAMA</p>
+            <h2 id="module-title" class="mt-3 text-2xl font-bold text-navy sm:text-3xl">Balanced Scorecard &amp; KPI Library</h2>
+            <p class="mt-5 text-base leading-7 text-charcoal">Bangun scorecard di empat perspektif—Financial, Customer, Internal Process, serta Learning &amp; Growth—agar setiap objective, KPI, target, dan realisasi tetap berada dalam satu arah strategi.</p>
+            <p class="mt-4 text-base leading-7 text-charcoal">Dirancang untuk percakapan evaluasi Q3 dan perencanaan Q4 yang lebih tajam: mudah dipindai saat demo, namun cukup terstruktur untuk menjadi fondasi pengelolaan kinerja.</p>
+          </div>
+          <aside class="rounded-lg bg-navy-mid p-6 sm:p-8 lg:col-span-5" aria-label="Untuk siapa modul ini">
+            <h3 class="text-xl font-bold text-gold">Untuk pemimpin yang perlu menyatukan prioritas.</h3>
+            <ul class="mt-5 space-y-4 text-sm leading-6 text-white">
+              <li class="border-l-2 border-blue pl-4">Praktisi HR yang memfasilitasi perencanaan dan review kinerja.</li>
+              <li class="border-l-2 border-blue pl-4">Business owner yang ingin melihat kemajuan strategi secara ringkas.</li>
+              <li class="border-l-2 border-blue pl-4">Tim konsultasi yang membutuhkan struktur demo yang kredibel.</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-navy">
+      <div class="mx-auto flex max-w-screen-xl flex-col gap-4 px-6 py-8 text-sm sm:flex-row sm:items-center sm:justify-between">
+        <div><p><span class="font-semibold text-gold">HRCofy</span> <span class="text-blue">Systema</span></p><p class="mt-1 text-muted">People | Performance | Protection</p></div>
+        <a class="font-semibold text-white transition hover:text-blue focus:outline-none focus-visible:ring-2 focus-visible:ring-blue" href="mailto:admin@hrcofy.com">admin@hrcofy.com</a>
+      </div>
+    </footer>
+  </body>
+</html>
